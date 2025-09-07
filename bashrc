@@ -31,7 +31,7 @@ bind '"\C-f":"tmux-sessionizer\n"'
 #wallpaper
 wp() {
   local file
-  file=$(find ~/pictures/wallpapers -type f -printf "%T@ %p\n" 2> /dev/null | sort -nr | cut -d' ' -f2- | fzf)
+  file=$(find ~/pictures/wallpapers -type f -not -path '*/.*' -printf "%T@ %p\n" 2> /dev/null | sort -nr | cut -d' ' -f2- | fzf)
   if [[ -n "$file" ]]; then
     pkill wbg 2> /dev/null
     nohup wbg "$file" > /dev/null 2>&1 &
