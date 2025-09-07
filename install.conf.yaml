@@ -19,6 +19,8 @@
     ~/.config/zathura: zathura
     ~/.config/flameshot: flameshot
     ~/.config/btop: btop
+    
+    ~/.local/scripts: scripts
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
