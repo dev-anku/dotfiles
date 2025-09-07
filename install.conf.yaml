@@ -17,8 +17,8 @@
     ~/.config/waybar: waybar
     ~/.config/wlogout: wlogout
     ~/.config/zathura: zathura
-
-    ~/pictures/wallpapers: wallpapers
+    ~/.config/flameshot: flameshot
+    ~/.config/btop: btop
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
