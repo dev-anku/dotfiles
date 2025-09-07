@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.config/fuzzel: fuzzel
+    ~/.config/hypr: hypr
+    ~/.config/kitty: kitty
+    ~/.config/mako: mako
+    ~/.config/neofetch: neofetch
+    ~/.config/nvim: nvim
+    ~/.config/tmux: tmux
+    ~/.config/waybar: waybar
+    ~/.config/wlogout: wlogout
+    ~/.config/zathura: zathura
+
+    ~/pictures/wallpapers: wallpapers
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

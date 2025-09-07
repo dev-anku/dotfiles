@@ -1,0 +1,15 @@
+brave-bin
+clipse
+flameshot-git
+neofetch
+nomacs
+spotify
+ttf-ms-fonts
+tty-clock
+tty-clock-debug
+tty-countdown-git
+wbg
+wbg-debug
+wlogout
+yay
+yay-debug
