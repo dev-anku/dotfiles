@@ -8,13 +8,17 @@
   font-weight: bolder;
 }
 
+window#waybar.battery-warning {
+  background: red;
+}
+
 .modules-left,
 .modules-right,
 .modules-center {
   background: #000001;
   padding: 0 10px;
   border-radius: 8px;
-  margin: 4px;
+  margin: 3px;
 }
 
 #clock {
@@ -55,18 +59,18 @@
 }
 
 #bluetooth.off {
-    color: #737373;
-    margin-right: 4px;
+  color: #737373;
+  margin-right: 4px;
 }
 
 #bluetooth.on {
-    color: #f43f5e;
-    margin-right: 4px;
+  color: #f43f5e;
+  margin-right: 4px;
 }
 
 #bluetooth.connected {
-    color: #14b8a6;
-    margin-right: 4px;
+  color: #14b8a6;
+  margin-right: 4px;
 }
 
 #wireplumber, #pulseaudio {
@@ -75,12 +79,21 @@
 }
 
 #wireplumber.muted {
-    color: #f43f5e;
+  color: #f43f5e;
 }
 
 #cpu {
   color: #0ea5e9;
   margin-right: 4px;
+}
+
+#battery { 
+  color: #0ea5e9;
+  margin-right: 4px;
+}
+
+#battery.warning {
+  color: #f43f5e;
 }
 
 #temperature {
