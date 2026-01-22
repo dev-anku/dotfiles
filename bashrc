@@ -14,6 +14,9 @@ alias timer='tty-countdown'
 
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 
+alias virtout='pactl load-module module-virtual-sink sink_name=sonobus_sink'
+alias virtin='pactl load-module module-virtual-source source_name=iphone_mic'
+
 # PS1=' \[\e[1;31m\]\w\[\e[m\] \[\e[0;31m\]| \[\e[m\]'
 PROMPT_COMMAND='
   branch=$(git branch --show-current 2>/dev/null)
@@ -36,6 +39,13 @@ wp() {
     pkill wbg 2> /dev/null
     nohup wbg "$file" > /dev/null 2>&1 &
   fi
+}
+
+#pdf opener
+pdf() {
+  local file
+  file="$(find ~ -type f -iname '*.pdf' 2>/dev/null | fzf --prompt='PDF > ')"
+  [ -n "$file" ] && nohup zathura "$file" >/dev/null 2>&1 &
 }
 
 # fuzzy finder

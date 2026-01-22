@@ -14,30 +14,32 @@ set selection-clipboard 	clipboard
 set database			null
 
 # Keymaps
-map h         navigate previous
-map l         navigate next
-map u 				scroll half-up
-map d 				scroll half-down
-map D 				toggle_page_mode
-map r 				reload
-map R 				rotate
-map m 				zoom in
-map n 				zoom out
-map i 				recolor
-map p 				print
-map g 				goto top
-map [fullscreen] h    navigate previous
-map [fullscreen] l    navigate next
-map [fullscreen] u 		scroll half-up
-map [fullscreen] d 		scroll half-down
-map [fullscreen] D 		toggle_page_mode
-map [fullscreen] r 		reload
-map [fullscreen] R 		rotate
-map [fullscreen] m 		zoom in
-map [fullscreen] n 		zoom out
-map [fullscreen] i 		recolor
-map [fullscreen] p 		print
-map [fullscreen] g 		goto top
+map h navigate previous
+map l navigate next
+map u scroll half-up
+map d scroll half-down
+map <S-Space> scroll half-up
+map <Space> scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map m zoom in
+map n zoom out
+map i recolor
+map p print
+map g goto top
+map [fullscreen] h navigate previous
+map [fullscreen] l navigate next
+map [fullscreen] u scroll half-up
+map [fullscreen] d scroll half-down
+map [fullscreen] D toggle_page_mode
+map [fullscreen] r reload
+map [fullscreen] R rotate
+map [fullscreen] m zoom in
+map [fullscreen] n zoom out
+map [fullscreen] i recolor
+map [fullscreen] p print
+map [fullscreen] g goto top
 
 # # Colors
 # set completion-bg 		"#272e33"
@@ -67,28 +69,64 @@ map [fullscreen] g 		goto top
 # set render-loading-fg 		"#d3c6aa"
 
 # Colors (Rose-pine)
-set completion-bg             "#2a273f"
-set completion-fg             "#e0def4"
-set completion-group-bg       "#2a273f"
-set completion-group-fg       "#c4a7e7"
-set completion-highlight-bg   "#c4a7e7"
-set completion-highlight-fg   "#232136"
-set recolor-lightcolor        "#232136"
-set recolor-darkcolor         "#e0def4"
-set default-bg                "#232136"
-set inputbar-bg               "#2a273f"
-set inputbar-fg               "#e0def4"
-set notification-fg           "#e0def4"
-set notification-error-bg     "#eb6f92"
-set notification-error-fg     "#e0def4"
-set notification-warning-bg   "#f6c177"
-set notification-warning-fg   "#232136"
-set statusbar-bg              "#2a273f"
-set statusbar-fg              "#e0def4"
-set index-bg                  "#2a273f"
-set index-fg                  "#e0def4"
-set index-active-bg           "#e0def4"
-set index-active-fg           "#232136"
-set render-loading-bg         "#232136"
-set render-loading-fg         "#e0def4"
+# set completion-bg             "#2a273f"
+# set completion-fg             "#e0def4"
+# set completion-group-bg       "#2a273f"
+# set completion-group-fg       "#c4a7e7"
+# set completion-highlight-bg   "#c4a7e7"
+# set completion-highlight-fg   "#232136"
+# set recolor-lightcolor        "#232136"
+# set recolor-darkcolor         "#e0def4"
+# set default-bg                "#232136"
+# set inputbar-bg               "#2a273f"
+# set inputbar-fg               "#e0def4"
+# set notification-fg           "#e0def4"
+# set notification-error-bg     "#eb6f92"
+# set notification-error-fg     "#e0def4"
+# set notification-warning-bg   "#f6c177"
+# set notification-warning-fg   "#232136"
+# set statusbar-bg              "#2a273f"
+# set statusbar-fg              "#e0def4"
+# set index-bg                  "#2a273f"
+# set index-fg                  "#e0def4"
+# set index-active-bg           "#e0def4"
+# set index-active-fg           "#232136"
+# set render-loading-bg         "#232136"
+# set render-loading-fg         "#e0def4"
 
+# Core background / foreground
+set default-bg                "#000000"
+set default-fg                "#e6e6e6"
+# Recolor mode (for PDFs)
+set recolor                   "true"
+set recolor-lightcolor        "#000000"
+set recolor-darkcolor         "#e6e6e6"
+set recolor-keephue           "false"
+# Input bar
+set inputbar-bg               "#000000"
+set inputbar-fg               "#e6e6e6"
+# Status bar
+set statusbar-bg              "#000000"
+set statusbar-fg              "#b0b0b0"
+# Completion menu
+set completion-bg             "#000000"
+set completion-fg             "#e6e6e6"
+set completion-group-bg       "#000000"
+set completion-group-fg       "#9a9a9a"
+set completion-highlight-bg   "#1a1a1a"
+set completion-highlight-fg   "#ffffff"
+# Index (outline)
+set index-bg                  "#000000"
+set index-fg                  "#b0b0b0"
+set index-active-bg           "#1a1a1a"
+set index-active-fg           "#ffffff"
+# Notifications
+set notification-bg           "#000000"
+set notification-fg           "#e6e6e6"
+set notification-error-bg     "#2a0000"
+set notification-error-fg     "#ff6b6b"
+set notification-warning-bg   "#2a1f00"
+set notification-warning-fg   "#ffd166"
+# Loading screen
+set render-loading-bg         "#000000"
+set render-loading-fg         "#666666"

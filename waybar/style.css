@@ -50,6 +50,7 @@
 
 #network {
   color: #3b82f6;
+  margin-left: 8px;
   margin-right: 8px;
 }
 
@@ -89,6 +90,7 @@
 
 #memory {
   color: #d946ef;
+  margin-left: 8px;
   margin-right: 4px;
 }
 

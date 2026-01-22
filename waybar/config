@@ -103,7 +103,7 @@
     "format": "{}"
   },
   "network": {
-    "format": " 󰖩 {essid}",
+    "format": "󰖩  {essid}",
     // "tooltip": "{ifname}",
     "tooltip-format": "{essid}",
     "interval": 2,
@@ -132,23 +132,23 @@
     ]
   },
   "memory": {
-    "format": " 󰫗 {percentage}% [{used}G] ",
+    "format": "󰫗  {percentage}% [{used}G] ",
     "interval": 5,
     "tooltip": "false"
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": "  {usage}%",
     "tooltip": "false"
   },
   "wireplumber": {
-      "format": " {volume}%",
-      "format-muted": "[ {volume}%] MUTED",
+      "format": "  {volume}%",
+      "format-muted": "[  {volume}%] MUTED",
       "on-click": "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
       "max-volume": 150,
       "scroll-step": 1
   },
   "pulseaudio": {
-    "format": " {volume}%",
+    "format": "  {volume}%",
     "scroll-step": 1,
     "on-click": "pavucontrol"
   },
