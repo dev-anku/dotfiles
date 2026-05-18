@@ -103,14 +103,14 @@
       "format": "{}"
     },
     "network": {
-      "format": " 󰖩 {essid}",
+      "format": "󰖩 {essid}",
       // "tooltip": "{ifname}",
       "tooltip-format": "{essid}",
       "interval": 2,
       "on-click": "exec kitty -e nmtui"
     },
     "bluetooth": {
-      "format": " ",
+      "format": "",
       "format-on": " ON ",
       "format-off": " OFF ",
       "format-disabled": "", // an empty format will hide the module
@@ -156,7 +156,8 @@
       "states": {
         "warning": 20,
       },
-      "format": "{icon}  {capacity}%",
+      "interval": 10,
+      "format": "{icon}  {capacity}% [{power:.1f}W]",
       "format-icons": ["", "", "", "", ""],
       "tooltip-format": "{timeTo}",
     },

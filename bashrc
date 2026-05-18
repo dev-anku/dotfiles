@@ -17,6 +17,8 @@ alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/Ve
 alias virtout='pactl load-module module-virtual-sink sink_name=sonobus_sink'
 alias virtin='pactl load-module module-virtual-source source_name=iphone_mic'
 
+alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0'
+
 # PS1=' \[\e[1;31m\]\w\[\e[m\] \[\e[0;31m\]| \[\e[m\]'
 PROMPT_COMMAND='
   branch=$(git branch --show-current 2>/dev/null)
