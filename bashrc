@@ -25,7 +25,7 @@ PROMPT_COMMAND='
   else
     git_part=""
   fi
-  PS1="\[\e[38;5;210;1m\] \W$git_part \[\e[38;5;210m\]  \[\e[0m\]"
+  PS1="\[\e[38;5;210;1m\] \W$git_part \[\e[38;5;210m\]| \[\e[0m\]"
 '
 
 PATH="$PATH":"$HOME/.local/scripts/"
