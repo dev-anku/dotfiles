@@ -6,7 +6,6 @@
       "hyprland/workspaces",
     "custom/separator",
     "memory",
-    "cpu",
     "battery",
     ],
     "modules-center": [
