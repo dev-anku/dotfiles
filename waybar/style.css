@@ -25,6 +25,20 @@ window#waybar.battery-warning {
   color: #fff;
 }
 
+#custom-timer {
+  padding: 0 10px;
+  color: #737373;
+  font-weight: 600;
+}
+
+#custom-timer.running {
+  color: lightgreen;
+}
+
+#custom-timer.finished {
+  color: red;
+}
+
 #tray {
   padding-left: 4px;
 }
@@ -73,7 +87,8 @@ window#waybar.battery-warning {
   margin-right: 4px;
 }
 
-#wireplumber, #pulseaudio {
+#wireplumber,
+#pulseaudio {
   color: #14b8a6;
   margin-right: 4px;
 }
@@ -87,7 +102,7 @@ window#waybar.battery-warning {
   margin-right: 4px;
 }
 
-#battery { 
+#battery {
   color: #0ea5e9;
   margin-right: 4px;
 }

@@ -299,7 +299,7 @@ local numpadKeys = { "End", "Down", "Next", "Left", "Begin", "Right", "Home", "U
 for i = 1, 10 do
 	hl.bind("KP_" .. numpadKeys[i], hl.dsp.focus({ workspace = i }))
 end
-hl.bind(super .. " + KP_Insert", hl.dsp.exec_cmd("playerctl pause"))
+hl.bind(" + KP_Insert", hl.dsp.exec_cmd("playerctl pause"))
 hl.bind("ALT + TAB", hl.dsp.focus({ workspace = 10 }))
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("playerctl pause"))
 

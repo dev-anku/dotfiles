@@ -6,10 +6,12 @@
       "hyprland/workspaces",
     "custom/separator",
     "memory",
+    "cpu",
     "battery",
     ],
     "modules-center": [
       // "hyprland/window"
+      "custom/timer",
       "clock",
     ],
     "modules-right": [
@@ -39,12 +41,19 @@
       "tooltip-format": "{:%a %d %B}"
     },
     "custom/timer": {
-      "exec": "cat /tmp/waybar-timer.json",
-      "on-click": "~/.config/waybar/scripts/timer.sh &",
-      "interval": 1,
-      "exec-on-event": true,
-      "format": "{text}",
-      "return-type": "json"
+        "exec": "$HOME/.config/waybar/scripts/timer.sh display",
+        "return-type": "json",
+        "format": "󱎫 {text}",
+        "interval": 1,
+
+        "on-click": "$HOME/.config/waybar/scripts/timer.sh click",
+        "on-double-click": "$HOME/.config/waybar/scripts/timer.sh reset",
+
+        "on-scroll-up": "$HOME/.config/waybar/scripts/timer.sh increase",
+        "on-scroll-down": "$HOME/.config/waybar/scripts/timer.sh decrease",
+
+        "tooltip": true,
+        "exec-on-event": true
     },
     "hyprland/workspaces": {
       "format": "{icon}",
